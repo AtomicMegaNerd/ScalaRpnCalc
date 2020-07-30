@@ -5,3 +5,7 @@ bin
 .settings
 *~
 .*~
+*.iml
+.idea
+project
+target
