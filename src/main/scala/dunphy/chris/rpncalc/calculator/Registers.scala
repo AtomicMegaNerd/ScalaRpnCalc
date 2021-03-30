@@ -11,11 +11,11 @@ import dunphy.chris.rpncalc.exceptions.MemoryEmptyException
  * our calculator's memory
  */
 case class Registers(
-  val r0: Double = 0.0,
-  val r1: Double = 0.0,
-  val r2: Double = 0.0,
-  val r3: Double = 0.0,
-  val size: Int = 0) {
+  r0: Double = 0.0,
+  r1: Double = 0.0,
+  r2: Double = 0.0,
+  r3: Double = 0.0,
+  size: Int = 0) {
 
   // This is fixed as we have four registers in
   // our calculator

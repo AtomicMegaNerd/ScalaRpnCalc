@@ -1,4 +1,4 @@
-package dunphy.chris.rpncalc.tokens;
+package dunphy.chris.rpncalc.tokens
 
 sealed trait Token
 case class ValueToken(value: Double) extends Token

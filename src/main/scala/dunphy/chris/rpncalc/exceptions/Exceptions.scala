@@ -1,4 +1,4 @@
-package dunphy.chris.rpncalc.exceptions;
+package dunphy.chris.rpncalc.exceptions
 
 class InvalidOperationException(message: String) extends Exception(message)
 class InvalidTokenException(message: String) extends Exception(message)

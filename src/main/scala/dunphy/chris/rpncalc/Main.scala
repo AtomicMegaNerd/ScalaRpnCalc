@@ -11,7 +11,7 @@ import dunphy.chris.rpncalc.calculator.Registers
 object Main {
 
   // The one mutable variable in our program
-  var registers = Registers()
+  var registers: Registers = Registers()
 
   val STARS = "************************************************"
 
@@ -28,7 +28,7 @@ object Main {
         println(STARS)
         print("> ")
 
-        // We are using java.util.Scaner here :-)
+        // We are using java.util.Scanner here :-)
         val token = scanner.nextLine.trim.toLowerCase
 
         token match {
@@ -36,7 +36,7 @@ object Main {
             println("Good-bye")
             return
           case "c" =>
-            registers = registers.clear
+            registers = registers.clear()
           case _ =>
             try {
               registers = RpnCalculator.parseToken(token, registers)
